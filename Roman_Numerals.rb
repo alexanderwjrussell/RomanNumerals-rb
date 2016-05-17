@@ -8,6 +8,10 @@ if  answer == "IIII"
   return "IV"
 end
 
+if answer == "IIIII"
+  return "V"
+end
+
   return answer
 end
 
