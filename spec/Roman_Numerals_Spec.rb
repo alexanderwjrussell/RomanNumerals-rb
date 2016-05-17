@@ -14,4 +14,8 @@ it "Returns III when I + II" do
   expect(@Roman_Numerals.add("I", "II")).to eq("III")
 end
 
+it "Returns IV when I + III" do
+  expect(@Roman_Numerals.add("I", "III")).to eq("IV")
+end
+
 end
