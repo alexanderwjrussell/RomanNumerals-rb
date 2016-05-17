@@ -7,6 +7,10 @@ class Roman_Numerals
     return convert_from_i(answer)
   end
 
+  def convert_to_i(first_number, second_number)
+    
+  end
+
   def convert_from_i(answer)
     answer = answer.gsub "IIIII", "V"
     answer = answer.gsub "IIII", "IV"
