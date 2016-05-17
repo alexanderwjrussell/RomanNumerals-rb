@@ -4,15 +4,13 @@ class Roman_Numerals
 
     answer = first_number + second_number
 
-    if  answer == "IIII"
-      return "IV"
-    end
-
     return convert_from_i(answer)
   end
 
   def convert_from_i(answer)
-    return answer.gsub "IIIII", "V"
+    answer = answer.gsub "IIIII", "V"
+    answer = answer.gsub "IIII", "IV"
+    return answer
   end
 
 end
