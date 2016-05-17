@@ -15,6 +15,7 @@ class Roman_Numerals
   def convert_from_i(answer)
     answer = answer.gsub "IIIII", "V"
     answer = answer.gsub "IIII", "IV"
+    answer = answer.gsub "VV", "X"
   end
 
 end
