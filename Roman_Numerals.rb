@@ -1,18 +1,18 @@
 class Roman_Numerals
 
-def add(first_number, second_number)
+  def add(first_number, second_number)
 
-answer = first_number + second_number
+    answer = first_number + second_number
 
-if  answer == "IIII"
-  return "IV"
-end
+    if  answer == "IIII"
+      return "IV"
+    end
 
-if answer == "IIIII"
-  return "V"
-end
+    return convert_from_i(answer)
+  end
 
-  return answer
-end
+  def convert_from_i(answer)
+    return answer.gsub "IIIII", "V"
+  end
 
 end
