@@ -62,4 +62,8 @@ it "Returns CCCCLVI when CLI + CCCV" do
   expect(@Roman_Numerals.add("CLI", "CCCV")).to eq("CCCCLVI")
 end
 
+it "Returns D when CCLVI + CCXLIV" do
+  expect(@Roman_Numerals.add("CCLVI", "CCXLIV")).to eq("D")
+end
+
 end
