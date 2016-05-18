@@ -18,6 +18,7 @@ class Roman_Numerals
     answer = answer.gsub "IIIII", "V"
     answer = answer.gsub "IIII", "IV"
     answer = answer.gsub "VV", "X"
+    answer = answer.gsub "XXXX", "XL"
   end
 
 
