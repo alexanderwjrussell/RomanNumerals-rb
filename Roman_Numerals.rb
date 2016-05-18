@@ -20,6 +20,7 @@ class Roman_Numerals
     answer = answer.gsub "VV", "X"
     answer = answer.gsub "XXXXX", "L"
     answer = answer.gsub "XXXX", "XL"
+    answer = answer.gsub "LL", "C"
     answer = answer.gsub "LXL", "XC"
   end
 
