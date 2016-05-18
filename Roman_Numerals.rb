@@ -10,6 +10,9 @@ class Roman_Numerals
   end
 
   def convert_to_i(number)
+    number = number.gsub "C", "LL"
+    number = number.gsub "L", "XXXXX"
+    number = number.gsub "X", "VV"
     number = number.gsub "IV", "IIII"
     number = number.gsub "V", "IIIII"
   end
