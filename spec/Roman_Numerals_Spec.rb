@@ -70,4 +70,8 @@ it "Returns M when D + D" do
   expect(@Roman_Numerals.add("D", "D")).to eq("M")
 end
 
+it "Returns MMXVI when MD + DXVI" do
+  expect(@Roman_Numerals.add("MD", "DXVI")).to eq("MMXVI")
+end
+
 end
