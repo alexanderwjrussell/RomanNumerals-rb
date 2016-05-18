@@ -42,4 +42,8 @@ it "Returns XL when XX + XX" do
   expect(@Roman_Numerals.add("XX", "XX")).to eq("XL")
 end
 
+it "Returns L when XXX + XX" do
+  expect(@Roman_Numerals.add("XXX", "XX")).to eq("L")
+end
+
 end
