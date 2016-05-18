@@ -50,4 +50,8 @@ it "Returns LXXV when L + XXV" do
   expect(@Roman_Numerals.add("L", "XXV")).to eq("LXXV")
 end
 
+it "Returns XC when LX + XXX" do
+  expect(@Roman_Numerals.add("LX", "XXX")).to eq("XC")
+end
+
 end
