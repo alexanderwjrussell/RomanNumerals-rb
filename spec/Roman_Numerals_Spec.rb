@@ -58,4 +58,8 @@ it "Returns C when L + L" do
   expect(@Roman_Numerals.add("L", "L")).to eq("C")
 end
 
+it "Returns CCCCLVI when CLI + CCCV" do
+  expect(@Roman_Numerals.add("CLI", "CCCV")).to eq("CCCCLVI")
+end
+
 end
