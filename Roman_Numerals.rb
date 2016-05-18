@@ -11,6 +11,7 @@ class Roman_Numerals
 
   def convert_to_i(number)
     number = number.gsub "C", "LL"
+    number = number.gsub "XL", "XXXX"
     number = number.gsub "L", "XXXXX"
     number = number.gsub "X", "VV"
     number = number.gsub "IV", "IIII"
@@ -25,6 +26,7 @@ class Roman_Numerals
     answer = answer.gsub "XXXX", "XL"
     answer = answer.gsub "LL", "C"
     answer = answer.gsub "LXL", "XC"
+    answer = answer.gsub "CCCCC", "D"
   end
 
 
